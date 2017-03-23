@@ -1,0 +1,16 @@
+[user]
+	name = RVIRUS0817
+	email = t.virus.1989@gmail.com
+
+[color]
+	ui = auto
+
+[alias]
+    g  = git
+    st = status
+    ss = status -s
+    sh = show
+    ch = checkout
+    br = branch
+    co = commit
+    pu = push

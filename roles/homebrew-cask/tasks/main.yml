@@ -1,0 +1,18 @@
+---
+- name: Tap Homebrew Cask
+  homebrew_tap: tap=caskroom/cask state=present
+
+- name: Install/Upgrade Homebrew Cask
+  homebrew: name=brew-cask state=latest
+
+- name: Tap external Homebrew Cask repositories
+  homebrew_tap: tap={{ item }} state=present
+  with_items: homebrew_cask_repositories
+  when: homebrew_cask_repositories
+
+- name: Install/Upgrade Homebrew Cask packages
+  homebrew_cask: >
+    name={{ item.name | default(item) }}
+    state={{ item.state | default('present') }}
+  with_items: homebrew_cask_packages
+  when: homebrew_cask_packages

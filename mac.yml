@@ -1,0 +1,47 @@
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  sudo: no
+  roles:
+    - homebrew
+    - homebrew-cask
+    - homedirectory
+  vars:
+    homebrew_repositories:
+ 
+    homebrew_packages:
+      - ansible
+      - git
+      - go
+      - htop-osx
+      - openssl
+      - sl
+      - terraform
+      - tmux
+      - tree
+      - wget
+      - zsh
+ 
+    homebrew_cask_repositories:
+ 
+    homebrew_cask_packages:
+      - firefox
+      - google-chrome
+      - google-japanese-ime
+      - karabiner
+      - slack
+      - vagrant
+      - virtualbox
+      - docker
+      - atom
+      - evernote
+      - CalendarFree
+      - bitbar
+      - ClipMenu
+      - iTerm
+      - LINE
+      - Messenger
+      - Skitch
+      - InsomniaX
+
+
