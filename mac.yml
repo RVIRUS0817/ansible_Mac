@@ -11,6 +11,7 @@
  
     homebrew_packages:
       - ansible
+      - python
       - git
       - go
       - htop-osx
@@ -37,11 +38,15 @@
       - evernote
       - CalendarFree
       - bitbar
-      - ClipMenu
+      - Clipy
       - iTerm
       - LINE
       - Messenger
       - Skitch
       - InsomniaX
+      - Alfred 2
+      - Near Lock
+      - Twitter
+      - Memory Clean
 
 
