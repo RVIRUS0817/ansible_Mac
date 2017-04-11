@@ -23,6 +23,7 @@
       - wget
       - zsh
       - grep
+      - reattach-to-user-namespace
       
  
     homebrew_cask_repositories:
@@ -50,5 +51,4 @@
       - Near Lock
       - Twitter
       - Memory Clean
-
 
