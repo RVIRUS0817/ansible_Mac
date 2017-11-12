@@ -1,4 +1,3 @@
----
 - name: Tap Homebrew Cask
   homebrew_tap: tap=caskroom/cask state=present
 

@@ -1,7 +1,5 @@
 - hosts: localhost
   connection: local
-  gather_facts: no
-  sudo: no
   roles:
     - homebrew
     - homebrew-cask
@@ -22,7 +20,6 @@
       - tree
       - wget
       - zsh
-      - grep
       - reattach-to-user-namespace
       
  
@@ -32,23 +29,15 @@
       - firefox
       - google-chrome
       - google-japanese-ime
-      - karabiner
-      - slack
-      - vagrant
-      - virtualbox
-      - docker
-      - atom
-      - evernote
-      - CalendarFree
       - bitbar
-      - Clipy
-      - iTerm
-      - LINE
-      - Messenger
-      - Skitch
-      - InsomniaX
-      - Alfred 2
-      - Near Lock
-      - Twitter
-      - Memory Clean
-
+      - karabiner
+      - karabiner-elements
+      - slack
+      - chatwork
+      - evernote
+      - iterm2
+      - virtualbox
+      - skitch
+      - alfred
+      - near-lock
+      - 1password
