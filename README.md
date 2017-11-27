@@ -5,11 +5,11 @@ ansibleでMacの環境セットアップ
 https://blog.adachin.me/wordpress/archives/5040
 
 # 事前準備
-## Xcodeのインストール
+## git clone/fork ansible_Mac/Xcodeのインストール
 ````
 $ git clone https://github.com/RVIRUS0817/ansible_Mac.git
 
-※多分git clone時にxcodeもインストールされるので以下のコマンドは必要ないかも。
+※git clone時にxcodeもインストールされるので以下のコマンドは必要ないかも。
 $ sudo xcodebuild -license
 ````
 
@@ -26,6 +26,12 @@ $ brew install ansible
 
 ## roles/homedirectory/files/
 ホームディレクトリで管理している.vimrcなど上記のディレクトリに置いて管理してください。
+
+## roles/homebrew/tasks/main.yml
+homebrewでインストールしたいパッケージを挿入
+
+## roles/homebrew-cask/tasks/main.yml
+homebrew-caskでインストールしたいアプリケーションを挿入
 
 ## dry-run
 ````
