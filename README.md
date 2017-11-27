@@ -24,6 +24,7 @@ $ brew update
 $ brew install ansible
 ````
 
+# 各パッケージ、アプリケーションの変更
 ## roles/homedirectory/files/
 ホームディレクトリで管理している.vimrcなど上記のディレクトリに置いて管理してください。
 
