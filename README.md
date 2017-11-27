@@ -1,6 +1,6 @@
 #  用途
 ansibleでMacの環境セットアップ  
-ホームディレクトリに必要なものも全て管理
+Homebrew、アプリケーションインストール自動化&ホームディレクトリに必要なものも全て管理
 >以下ブログより  
 https://blog.adachin.me/wordpress/archives/5040
 
