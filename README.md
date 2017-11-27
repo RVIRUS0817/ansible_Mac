@@ -43,4 +43,5 @@ $ ansible-playbook -i hosts mac.yml --ask-sudo-pass --check
 ````
 $ ansible-playbook -i hosts mac.yml --ask-sudo-pass
 ````
+## 6.Mac再起動
 

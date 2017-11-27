@@ -1,4 +1,4 @@
-- name: Update homebrew itself first
+- name: Update homebrew 
   homebrew: update_homebrew=yes
 
 - name: Install homebrew packages
@@ -17,6 +17,15 @@
       - wget
       - zsh
       - reattach-to-user-namespace
+      - awscli
+      - cask
+      - docker
+      - grep
+      - putty
+      - telnet
+      - tree
+      - watch
+      - w3m
 
 - name: Install pip packages
   pip: name={{ item }}
