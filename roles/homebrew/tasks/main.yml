@@ -17,3 +17,8 @@
       - wget
       - zsh
       - reattach-to-user-namespace
+
+- name: Install pip packages
+  pip: name={{ item }}
+  with_items:
+      - powerline-status
