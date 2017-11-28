@@ -20,6 +20,7 @@
       - awscli
       - cask
       - docker
+      - docker-compose
       - grep
       - putty
       - telnet
