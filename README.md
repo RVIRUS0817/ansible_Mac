@@ -8,8 +8,6 @@ https://blog.adachin.me/wordpress/archives/5040
 ## 1.git clone/fork ansible_Mac/Xcodeのインストール
 ````
 $ git clone https://github.com/RVIRUS0817/ansible_Mac.git
-
-※git clone時にxcodeもインストールされるので以下のコマンドは必要ないかも。
 $ sudo xcodebuild -license
 ````
 
