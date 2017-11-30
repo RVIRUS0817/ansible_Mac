@@ -8,7 +8,7 @@
       - python
       - git
       - go
-      - htop-osx
+      - htop
       - openssl
       - sl
       - terraform
