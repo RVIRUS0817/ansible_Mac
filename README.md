@@ -12,7 +12,7 @@ https://blog.adachin.me/wordpress/archives/5040
 
 ## 1.git clone/fork ansible_Mac/Xcode install  
 ````
-$ git clone https://github.com/RVIRUS0817/ansible_Mac.git
+$ git clone https://github.com/RVIRUS0817/ansible_Mac.git or Fork
 $ sudo xcodebuild -license
 ````
 
