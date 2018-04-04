@@ -7,4 +7,5 @@
   - { src: roles/homedirectory/files/.bash_profile, dest: ~/ }
   - { src: roles/homedirectory/files/.gitconfig, dest: ~/ }
   - { src: roles/homedirectory/files/.tmux.conf, dest: ~/ }
+  - { src: roles/homedirectory/files/.vimrc, dest: ~/ }
   - { src: roles/homedirectory/files/.zshrc, dest: ~/ }
