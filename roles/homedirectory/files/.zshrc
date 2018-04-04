@@ -9,7 +9,7 @@ SAVEHIST=10000
 # プロンプト
 autoload -U colors; colors
 local p_current="[%{$fg[red]%}%~%{$reset_color%}]"$'\n'
-local p_info="%F{yellow}%n@%m%f > "
+local p_info="%F{yellow}RVIRUS@%m%f > "
 PROMPT="$p_current$p_info"
 RPROMPT='%F{yellow}[%D]%f'
 setopt transient_rprompt
@@ -25,7 +25,7 @@ zstyle ':completion:*:default' menu select=2
 # エイリアスいろいろ
 export LSCOLORS=gxfxcxdxbxegedabagacad
 alias ls='ls -F --color'
-#alias ls="ls -FHG" #Mac
+alias ls="ls -FHG" #Mac
 alias ll='ls -Fl'
 alias la='ls -Fla'
 alias v='vim -R'
