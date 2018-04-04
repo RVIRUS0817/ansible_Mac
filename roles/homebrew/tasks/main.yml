@@ -27,6 +27,7 @@
       - tree
       - watch
       - w3m
+      - nvim
 
 - name: Install pip packages
   pip: name={{ item }}
