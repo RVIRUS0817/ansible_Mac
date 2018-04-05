@@ -1,8 +1,12 @@
-colorscheme delek
+colorscheme molokai
+
+syntax enable
+let g:molokai_original = 1
+let g:rehash256 = 1
+set background=dark
 
 set number
 set title
-syntax enable
 set autoindent
 set tabstop=4
 set shiftwidth=2
@@ -30,6 +34,8 @@ if dein#load_state('~/.cache/dein')
   " Add or remove your plugins here:
   call dein#add('Shougo/neosnippet.vim')
   call dein#add('Shougo/neosnippet-snippets')
+  let s:toml = '~/.config/nvim/dein.toml'
+  call dein#load_toml(s:toml, {'lazy': 0})
 
   " You can specify revision/branch/tag.
   call dein#add('Shougo/deol.nvim', { 'rev': 'a1b5108fd' })
@@ -47,3 +53,4 @@ syntax enable
 if dein#check_install()
   call dein#install()
 endif
+

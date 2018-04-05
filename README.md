@@ -15,6 +15,8 @@ https://blog.adachin.me/wordpress/archives/5040
 ・zsh  
 ・tmux/powerline  
 
+![2018-04-05 13 52 03](https://user-images.githubusercontent.com/5633085/38347784-8c831c88-38d8-11e8-9f96-724292627670.png)
+
 ## Preparation
 
 ## 1.git clone/fork ansible_Mac/Xcode install

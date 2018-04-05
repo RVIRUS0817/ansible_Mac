@@ -1,0 +1,5 @@
+[[plugins]]
+repo = 'jacoborus/tender.vim'
+
+[[plugins]]
+repo = 'tomasr/molokai'
