@@ -1,3 +1,10 @@
+- name: Copy home directory .cache/dein
+  file: path={{ item.name }} 
+        state=directory 
+        mode=0755
+  with_items:
+  - { name: '~/.cache/dein' }
+
 - name: Copy home directory Files.
   copy:
     src: "{{ item.src }}"
@@ -9,3 +16,13 @@
   - { src: roles/homedirectory/files/.tmux.conf, dest: ~/ }
   - { src: roles/homedirectory/files/.vimrc, dest: ~/ }
   - { src: roles/homedirectory/files/.zshrc, dest: ~/ }
+
+- name: Download dein.vim install.sh
+  get_url:
+    url: https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh
+    dest: ~/.config/nvim
+    mode: 0755
+ 
+- name: install.sh dein.vim
+  become_user: root
+  shell: sh ~/.config/nvim/installer.sh ~/.cache/dein
