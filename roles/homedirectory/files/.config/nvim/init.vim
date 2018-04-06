@@ -15,6 +15,7 @@ set ignorecase
 set smartcase
 set wrapscan
 map ; :
+set ttimeoutlen=10
 
 if &compatible
   set nocompatible               " Be iMproved
