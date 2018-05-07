@@ -1,6 +1,6 @@
 - hosts: localhost
   connection: local
   roles:
-    - homebrew
+    #    - homebrew
     - homebrew-cask
-    - homedirectory
+    #- homedirectory
