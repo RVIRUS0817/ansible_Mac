@@ -29,6 +29,7 @@
       - w3m
       - neovim
       - iproute2mac
+      - watch
 
 - name: Install pip packages
   pip: name={{ item }}
