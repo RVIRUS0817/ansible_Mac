@@ -10,9 +10,9 @@ KEYTIMEOUT=1
 # プロンプト
 autoload -U colors; colors
 local p_current="[%{$fg[red]%}%~%{$reset_color%}]"$'\n'
-local p_info="%F{yellow}RVIRUS@%m%f > "
+local p_info="%F{yellow}adachin@%m%f > "
 PROMPT="$p_current$p_info"
-RPROMPT='%F{yellow}[%D]%f'
+RPROMPT='%F{yellow}[%D]%f$(git-prompt)'
 setopt transient_rprompt
 setopt auto_param_slash
 setopt auto_menu
@@ -51,8 +51,8 @@ function print_known_hosts (){
 _cache_hosts=($( print_known_hosts ))
 
 
-#tmux 
-function tm() { 
+#tmux
+function tm() {
        if [ -n "${1}" ]; then
            tmux attach-session -t ${1} || \
            tmux new-session -s ${1}
@@ -68,8 +68,9 @@ if [ -x "`which go`" ]; then
        export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
  fi
 
+
 # ブランチ名を色付きで表示させるメソッド
-function rprompt-git-current-branch {
+function git-prompt {
   local branch_name st branch_status
 
   if [ ! -e  ".git" ]; then
@@ -104,6 +105,3 @@ function rprompt-git-current-branch {
 
 # プロンプトが表示されるたびにプロンプト文字列を評価、置換する
 setopt prompt_subst
-
-# プロンプトの右側(RPROMPT)にメソッドの結果を表示させる
-RPROMPT='`rprompt-git-current-branch`'
