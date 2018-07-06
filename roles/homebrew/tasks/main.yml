@@ -30,6 +30,7 @@
       - neovim
       - iproute2mac
       - watch
+      - jq
 
 - name: Install pip packages
   pip: name={{ item }}
