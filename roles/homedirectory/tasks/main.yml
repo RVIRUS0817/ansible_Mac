@@ -24,9 +24,7 @@
     mode: 0755
  
 - name: install.sh dein.vim
-  become_user: root
   shell: sh ~/.config/nvim/installer.sh ~/.cache/dein
 
 - name: source ~/.zshrc
-  become_user: root
   shell: source ~/.zshrc

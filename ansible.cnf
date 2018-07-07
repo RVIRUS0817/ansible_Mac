@@ -1,0 +1,9 @@
+[defaults]
+retry_files_enabled = False
+
+[privilege_escalation]
+become = True
+
+[ssh_connection]
+deprecation_warnings=False
+
