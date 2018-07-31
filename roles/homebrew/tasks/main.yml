@@ -31,6 +31,7 @@
       - iproute2mac
       - watch
       - jq
+      - peco
 
 - name: Install pip packages
   pip: name={{ item }}

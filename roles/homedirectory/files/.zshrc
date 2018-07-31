@@ -105,3 +105,14 @@ function git-prompt {
 
 # プロンプトが表示されるたびにプロンプト文字列を評価、置換する
 setopt prompt_subst
+
+### history
+function peco-history-selection() {
+    #BUFFER=`history | tail -r | awk '{$1="";print $0}' | peco`
+    BUFFER=`history | tail -r | awk '{$1="";print $0}' | egrep -v "ls" | uniq -u | sed 's/^ //g' | peco`
+    CURSOR=$#BUFFER
+    zle reset-prompt
+}
+
+zle -N peco-history-selection
+bindkey '^Y' peco-history-selection
