@@ -14,6 +14,7 @@ https://blog.adachin.me/wordpress/archives/5040
 ・nvim/dein.vim  
 ・zsh  
 ・tmux/powerline  
+・peco/ghq (control + h(history),j(ssh)/repo   
 
 ![2018-04-05 14 08 57](https://user-images.githubusercontent.com/5633085/38348117-ee9d3c4e-38da-11e8-9a9e-6d40173133a2.png)
 
