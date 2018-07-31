@@ -32,6 +32,7 @@
       - watch
       - jq
       - peco
+      - ghq
 
 - name: Install pip packages
   pip: name={{ item }}

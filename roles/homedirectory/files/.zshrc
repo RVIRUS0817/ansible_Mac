@@ -115,4 +115,27 @@ function peco-history-selection() {
 }
 
 zle -N peco-history-selection
-bindkey '^Y' peco-history-selection
+bindkey '^H' peco-history-selection
+
+### peco&ssh
+function peco-ssh () {
+  local selected_host=$(awk '
+  tolower($1)=="host" {
+    for (i=2; i<=NF; i++) {
+      if ($i !~ "[*?]") {
+        print $i
+      }
+    }
+  }
+  ' ~/.ssh/conf.d/*/config_* | sort | peco --query "$LBUFFER")
+  if [ -n "$selected_host" ]; then
+    BUFFER="ssh -A ${selected_host}"
+    zle accept-line
+  fi
+  zle clear-screen
+}
+zle -N peco-ssh
+bindkey '^J' peco-ssh
+
+## ghq
+alias repo='ghq look $(ghq list | peco)'

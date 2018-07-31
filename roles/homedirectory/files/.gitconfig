@@ -14,3 +14,7 @@
     br = branch
     co = commit
     pu = push
+
+[ghq]
+  root = ~/git/RVIRUS0817
+  root = ~/git/lancers
