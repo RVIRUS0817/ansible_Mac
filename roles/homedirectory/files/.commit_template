@@ -1,0 +1,16 @@
+
+
+### Add prefix(ref: https://goodpatch.com/blog/beautiful-commits-with-emojis/ )
+# ==== Emojis ====
+# ✨  :sparkles:     機能追加
+# 👍   :+1:          機能改善
+# 🎉   :tada:        大きな機能追加
+# 🔨   :hammer:      リファクタリング
+# 🐛   :bug:         バグ修正
+# 🚿   :shower:      削除
+# 💚   :green_heart: テストやCIの修正 / 改善
+# 👕   :shirt:       Lintエラーの修正 / コードスタイルの修正
+# 🚀   :rocket:      パフォーマンス改善
+# 🆙   :up:          アップデート
+# 👮   :cop:         セキュリティ関連
+# ✏️    :pencil2:     ドキュメント修正

@@ -18,3 +18,7 @@
 [ghq]
   root = ~/git/RVIRUS0817
   root = ~/git/lancers
+
+[commit]
+  template = ~/.commit_template
+
