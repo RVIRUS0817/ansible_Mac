@@ -5,6 +5,7 @@ HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 KEYTIMEOUT=1
+function history-all { history -E 1 }
 
 
 # プロンプト
@@ -108,8 +109,7 @@ setopt prompt_subst
 
 ### history
 function peco-history-selection() {
-    #BUFFER=`history | tail -r | awk '{$1="";print $0}' | peco`
-    BUFFER=`history | tail -r | awk '{$1="";print $0}' | egrep -v "ls" | uniq -u | sed 's/^ //g' | peco`
+    BUFFER=`history 1 | tail -r | awk '{$1="";print $0}' | egrep -v "ls" | uniq -u | sed 's/^ //g' | peco`
     CURSOR=$#BUFFER
     zle reset-prompt
 }
