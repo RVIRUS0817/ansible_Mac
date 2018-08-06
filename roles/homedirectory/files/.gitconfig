@@ -17,6 +17,7 @@
 
 [ghq]
   root = ~/git/RVIRUS0817
+  root = ~/git/RVIRUS0817-bitbucket
   root = ~/git/lancers
 
 [commit]
