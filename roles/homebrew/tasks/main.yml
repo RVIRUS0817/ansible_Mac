@@ -33,6 +33,7 @@
       - jq
       - peco
       - ghq
+      - gnu-sed
 
 - name: Install pip packages
   pip: name={{ item }}
