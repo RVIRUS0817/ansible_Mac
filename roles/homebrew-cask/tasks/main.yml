@@ -5,6 +5,7 @@
   homebrew_cask: name={{ item }}
   accept_external_apps: True
   install_options: 'appdir=/Applications'
+  ignore_errors: yes
   with_items:
     - firefox
     - google-chrome

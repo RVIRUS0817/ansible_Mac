@@ -3,6 +3,7 @@
 
 - name: Install homebrew packages
   homebrew: name={{ item }}
+  ignore_errors: yes
   with_items:
       - ansible
       - python
