@@ -5,36 +5,7 @@
   homebrew: name={{ item }}
   ignore_errors: yes
   with_items:
-      - ansible
-      - python
-      - git
-      - go
-      - htop
-      - openssl
-      - sl
-      - terraform
-      - tmux
-      - tree
-      - wget
-      - zsh
-      - reattach-to-user-namespace
-      - awscli
-      - cask
-      - docker
-      - docker-compose
-      - grep
-      - putty
-      - telnet
-      - tree
-      - watch
-      - w3m
-      - neovim
-      - iproute2mac
-      - watch
-      - jq
-      - peco
-      - ghq
-      - gnu-sed
+    - "{{ BREW_TARGETS }}"
 
 - name: Install pip packages
   pip: name={{ item }}

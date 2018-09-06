@@ -43,20 +43,17 @@ $ brew install ansible
 ## 1.roles/homedirectory/files/
 Please put it in the above directory such as .vimrc managed in the home directory and manage it.
 
-## 2.roles/homebrew/tasks/main.yml
-Insert the package you want to install with homebrew
+## 2.group_vars/all
+Insert the package you want to install with homebrew,homebrew-cask,homedirectory
 
-## 3.roles/homebrew-cask/tasks/main.yml
-Insert the application you want to install with homebrew-cask
-
-## 4.dry-run
+## 3.dry-run
 ````
-$ ansible-playbook -i hosts mac.yml --ask-sudo-pass --check
+$ ansible-playbook -i hosts mac.yml -KD -C
 ````
 
-## 5.run
+## 4.run
 ````
-$ ansible-playbook -i hosts mac.yml --ask-sudo-pass
+$ ansible-playbook -i hosts mac.yml -KD
 ````
-## 6.reboot Mac
+## 5.reboot Mac
 

@@ -1,0 +1,72 @@
+#homebrew list
+BREW_TARGETS:
+      - ansible
+      - python
+      - git
+      - go
+      - htop
+      - openssl
+      - sl
+      - terraform
+      - tmux
+      - tree
+      - wget
+      - zsh
+      - reattach-to-user-namespace
+      - awscli
+      - cask
+      - docker
+      - docker-compose
+      - grep
+      - putty
+      - telnet
+      - tree
+      - watch
+      - w3m
+      - neovim
+      - iproute2mac
+      - watch
+      - jq
+      - peco
+      - ghq
+      - gnu-sed
+
+#homebrew-cask list
+CASK_TARGETS:
+    - firefox
+    - google-chrome
+    - google-japanese-ime
+    - bitbar
+    - karabiner
+    - karabiner-elements
+    - slack
+    - chatwork
+    - evernote
+    - iterm2
+    - virtualbox
+    - skitch
+    - alfred
+    - near-lock
+    - 1password
+    - skype
+    - messenger
+    - cyberduck
+    - atom
+    - macdown
+    - thunderbird
+    - clipy
+    - macvim
+    - jasper
+    - visual-studio-code
+
+#homedirectory list
+HOMEDIR_TARGETS:
+  - { src: roles/homedirectory/files/.config, dest: ~/ }
+  - { src: roles/homedirectory/files/.bash_profile, dest: ~/ }
+  - { src: roles/homedirectory/files/.gitconfig, dest: ~/ }
+  - { src: roles/homedirectory/files/.commit_template, dest: ~/ }
+  - { src: roles/homedirectory/files/.tmux.conf, dest: ~/ }
+  - { src: roles/homedirectory/files/.vimrc, dest: ~/ }
+  - { src: roles/homedirectory/files/.zshrc, dest: ~/ }
+  - { src: roles/homedirectory/files/.gvimrc, dest: ~/ }
+  - { src: roles/homedirectory/files/.vim, dest: ~/ }

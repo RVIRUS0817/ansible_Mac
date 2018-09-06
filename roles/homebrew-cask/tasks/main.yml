@@ -7,28 +7,4 @@
   install_options: 'appdir=/Applications'
   ignore_errors: yes
   with_items:
-    - firefox
-    - google-chrome
-    - google-japanese-ime
-    - bitbar
-    - karabiner
-    - karabiner-elements
-    - slack
-    - chatwork
-    - evernote
-    - iterm2
-    - virtualbox
-    - skitch
-    - alfred
-    - near-lock
-    - 1password
-    - skype
-    - messenger
-    - cyberduck
-    - atom
-    - macdown
-    - thunderbird
-    - clipy
-    - macvim
-    - jasper
-    - visual-studio-code
+    - "{{ CASK_TARGETS }}"
