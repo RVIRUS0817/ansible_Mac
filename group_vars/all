@@ -30,6 +30,7 @@ BREW_TARGETS:
       - peco
       - ghq
       - gnu-sed
+      - bat
 
 #homebrew-cask list
 CASK_TARGETS:
