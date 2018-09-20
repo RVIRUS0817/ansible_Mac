@@ -4,10 +4,10 @@
 - name: Install homebrew packages
   homebrew: name={{ item }}
   ignore_errors: yes
-  with_items:
+  loop:
     - "{{ BREW_TARGETS }}"
 
 - name: Install pip packages
   pip: name={{ item }}
-  with_items:
+  loop:
       - powerline-status
