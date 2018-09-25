@@ -138,3 +138,6 @@ bindkey '^J' peco-ssh
 
 ## ghq
 alias repo='ghq look $(ghq list | peco)'
+
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
