@@ -59,6 +59,7 @@ CASK_TARGETS:
     - macvim
     - jasper
     - visual-studio-code
+    - kitematic
 
 #homedirectory list
 HOMEDIR_TARGETS:
