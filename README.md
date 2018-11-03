@@ -57,3 +57,4 @@ $ ansible-playbook -i hosts mac.yml -KD
 ````
 ## 5.reboot Mac
 
+test
