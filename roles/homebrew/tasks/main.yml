@@ -1,6 +1,9 @@
 - name: Update homebrew 
   homebrew: update_homebrew=yes
 
+- name: brew tap mackerelio/mackerel-agent
+  shell: brew tap mackerelio/mackerel-agent
+
 - name: Install homebrew packages
   homebrew: name={{ item }}
   ignore_errors: yes
