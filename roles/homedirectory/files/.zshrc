@@ -62,12 +62,9 @@ function tm() {
        fi
 }
 
-if [ -x "`which go`" ]; then
-       export GOROOT=`go env GOROOT`
-       export GOPATH=$HOME/code/go-local
-       export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
- fi
-
+export GOROOT=/usr/local/opt/go/libexec
+export GOPATH=$HOME
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
 # ブランチ名を色付きで表示させるメソッド
 function git-prompt {
