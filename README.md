@@ -21,21 +21,10 @@ https://blog.adachin.me/wordpress/archives/5040
 
 ## Preparation
 
-## 1.git clone/fork ansible_Mac/Xcode install
+## 1.git clone/fork run first.sh  
 ````
 $ git clone https://github.com/RVIRUS0817/ansible_Mac.git or Fork
-$ sudo xcodebuild -license
-````
-
-## 2.Homebrew install
-````
-$ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-````
-
-## 3.ansible install
-````
-$ brew update
-$ brew install ansible
+$ ./scripts/first.sh
 ````
 
 ## change application
