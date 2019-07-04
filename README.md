@@ -29,21 +29,21 @@ $ ./scripts/first.sh
 
 ## change application
 
-## 1.roles/homedirectory/files/
+## 2.roles/homedirectory/files/
 Please put it in the above directory such as .vimrc managed in the home directory and manage it.
 
-## 2.group_vars/all
+## 3.group_vars/all
 Insert the package you want to install with homebrew,homebrew-cask,homedirectory
 
-## 3.dry-run
+## 4.dry-run
 ````
 $ ansible-playbook -i hosts mac.yml -KD -C
 ````
 
-## 4.run
+## 5.run
 ````
 $ ansible-playbook -i hosts mac.yml -KD
 ````
-## 5.reboot Mac
+## 6.reboot Mac
 
 😎
