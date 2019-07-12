@@ -1,6 +1,6 @@
 #pip list
 PIP_TARGETS:
-      - ansible
+      - powerline-status
 
 #homebrew list
 BREW_TARGETS:
