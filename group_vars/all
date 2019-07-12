@@ -32,6 +32,7 @@ BREW_TARGETS:
       - gnu-sed
       - bat
       - mkr
+      - knqyf263/trivy/trivy
 
 #homebrew-cask list
 CASK_TARGETS:

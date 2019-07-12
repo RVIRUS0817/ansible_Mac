@@ -66,6 +66,7 @@ export GOROOT=/usr/local/opt/go/libexec
 export GOPATH=$HOME
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
+
 # ブランチ名を色付きで表示させるメソッド
 function git-prompt {
   local branch_name st branch_status
@@ -136,5 +137,9 @@ bindkey '^J' peco-ssh
 ## ghq
 alias repo='ghq look $(ghq list | peco)'
 
-export LC_ALL=en_US.UTF-8
+export LC_ALL='ja_JP.UTF-8'
 export LANG=en_US.UTF-8
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+

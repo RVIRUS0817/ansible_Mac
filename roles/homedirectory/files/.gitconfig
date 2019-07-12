@@ -17,8 +17,10 @@
 
 [ghq]
   root = ~/git/RVIRUS0817
-  root = ~/git/gitlab
+  root = ~/git/RVIRUS0817-bitbucket
+  root = ~/git/RVIRUS0817-gitlab
+  root = ~/git/lancers
+  root = ~/git/shirasud
 
 [commit]
   template = ~/.commit_template
-

@@ -14,3 +14,13 @@
 # 🆙   :up:          アップデート
 # 👮   :cop:         セキュリティ関連
 # ✏️    :pencil2:     ドキュメント修正
+
+### Add prefix pattern 2 https://github.com/angular/angular.js/blob/master/CONTRIBUTING.md#-git-commit-guidelines
+# feat: 新機能
+# fix: バグ修正
+# docs: ドキュメント修正のみ
+# style: 影響を与えないコードの変更 (white-space, formatting, missing semi-colons, etc)
+# refactor: バグ修正/機能追加を含まないコード変更
+# perf: パフォーマンス向上のコード変更
+# test: テストの追加
+# chore: ビルドプロセスの変更やドキュメント生成のような補助ツールとライブラリの変更
