@@ -1,12 +1,12 @@
 ![スクリーンショット 2019-07-12 8 59 47](https://user-images.githubusercontent.com/5633085/61093278-b3c23b80-a484-11e9-974f-ca173732bc5d.png)
 
-##  Used
+#  Used
 Homebrew、application install & homedirectory
 > please my blog
 
 https://blog.adachin.me/wordpress/archives/5040
 
-## My Environment
+# My Environment
 
 ・nvim/dein.vim  
 ・zsh  
@@ -16,7 +16,7 @@ https://blog.adachin.me/wordpress/archives/5040
 ![2018-09-20 23 37 48](https://user-images.githubusercontent.com/5633085/45825886-38916c80-bd2e-11e8-83ff-7fd3bb51b12c.jpg)
 
 
-## How to
+# How to
 
 ## 1.git clone/fork run first.sh  
 ````
