@@ -1,9 +1,6 @@
-# ansible_Mac
-
-![2018-03-26 13 25 29](https://user-images.githubusercontent.com/5633085/37886882-2bb49378-30f9-11e8-8e90-b305484ed28d.png)
+![スクリーンショット 2019-07-12 8 59 47](https://user-images.githubusercontent.com/5633085/61093278-b3c23b80-a484-11e9-974f-ca173732bc5d.png)
 
 ##  Used
-ansible Mac
 Homebrew、application install & homedirectory
 > please my blog
 
@@ -19,7 +16,7 @@ https://blog.adachin.me/wordpress/archives/5040
 ![2018-09-20 23 37 48](https://user-images.githubusercontent.com/5633085/45825886-38916c80-bd2e-11e8-83ff-7fd3bb51b12c.jpg)
 
 
-## Preparation
+## How to
 
 ## 1.git clone/fork run first.sh  
 ````
