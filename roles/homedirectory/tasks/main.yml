@@ -17,6 +17,6 @@
     url: https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh
     dest: ~/.config/nvim
     mode: 0755
- 
+
 - name: install.sh dein.vim
   shell: sh ~/.config/nvim/installer.sh ~/.cache/dein
