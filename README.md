@@ -24,13 +24,11 @@ $ git clone https://github.com/RVIRUS0817/ansible_Mac.git or Fork
 $ ./scripts/first.sh
 ````
 
-## change application
-
 ## 2.roles/homedirectory/files/
 Please put it in the above directory such as .vimrc managed in the home directory and manage it.
 
 ## 3.group_vars/all
-Insert the package you want to install with homebrew,homebrew-cask,homedirectory
+Insert the package you want to install with pip,homebrew,homebrew-tap,homebrew-cask,homedirectory
 
 ## 4.dry-run
 ````
