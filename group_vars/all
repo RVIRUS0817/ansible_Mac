@@ -1,3 +1,7 @@
+#pip list
+PIP_TARGETS:
+      - ansible
+
 #homebrew list
 BREW_TARGETS:
       - ansible
@@ -33,6 +37,10 @@ BREW_TARGETS:
       - bat
       - mkr
       - knqyf263/trivy/trivy
+
+#brewtap list
+BREWTAP_TARGETS:
+      - mackerelio/mackerel-agent
 
 #homebrew-cask list
 CASK_TARGETS:

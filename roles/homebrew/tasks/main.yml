@@ -1,8 +1,11 @@
 - name: Update homebrew 
   homebrew: update_homebrew=yes
 
-- name: brew tap mackerelio/mackerel-agent
-  shell: brew tap mackerelio/mackerel-agent
+- name: Install brew tap packages
+  homebrew_tap: name={{ item }}
+  ignore_errors: yes
+  loop:
+    - "{{ BREWTAP_TARGETS }}" 
 
 - name: Install homebrew packages
   homebrew: name={{ item }}
@@ -13,4 +16,4 @@
 - name: Install pip packages
   pip: name={{ item }}
   loop:
-      - powerline-status
+    - "{{ PIP_TARGETS }}"
