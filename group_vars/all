@@ -82,3 +82,4 @@ HOMEDIR_TARGETS:
   - { src: roles/homedirectory/files/.zshrc, dest: ~/ }
   - { src: roles/homedirectory/files/.gvimrc, dest: ~/ }
   - { src: roles/homedirectory/files/.vim, dest: ~/ }
+  - { src: roles/homedirectory/files/.terraformrc, dest: ~/ }
