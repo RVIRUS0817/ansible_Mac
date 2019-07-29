@@ -18,9 +18,9 @@ https://blog.adachin.me/wordpress/archives/5040
 
 # How to
 
-## 1.git clone/fork run first.sh  
+## 1.fork run first.sh  
 ````
-$ git clone https://github.com/RVIRUS0817/ansible_Mac.git or Fork
+Fork!!!!
 $ ./scripts/first.sh
 ````
 
