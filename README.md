@@ -42,3 +42,20 @@ $ ansible-playbook -i hosts mac.yml -KD
 ## 6.reboot Mac
 
 😎
+
+## tag run
+- homebrew
+```
+$ ansible-playbook -i hosts mac.yml --tags homebrew -KD
+
+```
+- homebrew-cask
+```
+$ ansible-playbook -i hosts mac.yml --tags homebrew-cask -KD
+
+```
+- homedirectory
+```
+$ ansible-playbook -i hosts mac.yml --tags homedirectory -KD
+
+```
