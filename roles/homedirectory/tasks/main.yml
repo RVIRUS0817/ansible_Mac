@@ -1,11 +1,12 @@
 - name: Copy home directory .cache/dein
-  file: path={{ item.name }} 
-        state=directory 
+  file: path={{ item.name }}
+        state=directory
         mode=0755
   loop:
   - { name: '~/.cache/dein' }
 
 - name: Copy home directory Files.
+  tags: homedirectory
   copy:
     src: "{{ item.src }}"
     dest: "{{ item.dest }}"

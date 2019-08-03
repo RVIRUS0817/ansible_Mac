@@ -1,19 +1,22 @@
-- name: Update homebrew 
+- name: Update homebrew
   homebrew: update_homebrew=yes
 
 - name: Install homebrew tap packages
   homebrew_tap: name={{ item }}
+  tags: homebrew
   ignore_errors: yes
   loop:
-    - "{{ BREWTAP_TARGETS }}" 
+    - "{{ BREWTAP_TARGETS }}"
 
 - name: Install homebrew packages
   homebrew: name={{ item }}
+  tags: homebrew
   ignore_errors: yes
   loop:
     - "{{ BREW_TARGETS }}"
 
 - name: Install pip packages
   pip: name={{ item }}
+  tags: homebrew
   loop:
     - "{{ PIP_TARGETS }}"
