@@ -37,6 +37,7 @@ BREW_TARGETS:
       - bat
       - mkr
       - knqyf263/trivy/trivy
+      - kubernetes-cli
 
 #brewtap list
 BREWTAP_TARGETS:
