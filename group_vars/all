@@ -38,6 +38,7 @@ BREW_TARGETS:
       - mkr
       - knqyf263/trivy/trivy
       - kubernetes-cli
+      - doctl
 
 #brewtap list
 BREWTAP_TARGETS:
