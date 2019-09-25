@@ -37,6 +37,7 @@ BREW_TARGETS:
       - bat
       - mkr
       - knqyf263/trivy/trivy
+      - goodwithtech/r/dockle
       - kubernetes-cli
       - doctl
 
