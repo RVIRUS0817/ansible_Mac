@@ -49,6 +49,9 @@ $ ansible-playbook -i hosts mac.yml -KD
 😎
 
 ## tag run
+
+If you want to run each role after the second time, you can also run with tags.
+
 - homebrew
 ```
 $ ansible-playbook -i hosts mac.yml --tags homebrew -KD
