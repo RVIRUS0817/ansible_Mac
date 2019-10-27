@@ -2,9 +2,14 @@
 
 #  Used
 Homebrew、application install & homedirectory
-> please my blog
+
+> please read my blog
 
 https://blog.adachin.me/wordpress/archives/5040
+
+# LT
+
+https://speakerdeck.com/rvirus0817/macwoansiblede-gou-cheng-guan-li-sitiyatutaohua
 
 # My Environment
 
