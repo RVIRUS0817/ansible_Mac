@@ -40,6 +40,7 @@ BREW_TARGETS:
       - goodwithtech/r/dockle
       - kubernetes-cli
       - doctl
+      - circleci
 
 #brewtap list
 BREWTAP_TARGETS:
