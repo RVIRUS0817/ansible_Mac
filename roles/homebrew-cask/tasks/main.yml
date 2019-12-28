@@ -1,8 +1,8 @@
 - name: Install Homebrew cask packages
-  homebrew_cask: name={{ item }}
   tags: homebrew-cask
-  accept_external_apps: True
-  install_options: 'appdir=/Applications'
+  homebrew_cask: name={{ item }}
+  environment:
+    HOMEBREW_CASK_OPTS: --appdir=/Applications
   ignore_errors: yes
   loop:
     - "{{ CASK_TARGETS }}"
