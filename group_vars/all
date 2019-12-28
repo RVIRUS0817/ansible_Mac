@@ -60,7 +60,6 @@ CASK_TARGETS:
     - virtualbox
     - skitch
     - alfred
-    - near-lock
     - 1password
     - messenger
     - cyberduck
