@@ -11,7 +11,7 @@ function history-all { history -E 1 }
 # プロンプト
 autoload -U colors; colors
 local p_current="[%{$fg[red]%}%~%{$reset_color%}]"$'\n'
-local p_info="%F{yellow}adachin@%m%f > "
+local p_info="%F{yellow}adachin@ > "
 PROMPT="$p_current$p_info"
 RPROMPT='%F{yellow}[%D]%f$(git-prompt)'
 setopt transient_rprompt
