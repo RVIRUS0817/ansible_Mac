@@ -40,6 +40,7 @@ BREW_TARGETS:
       - goodwithtech/r/dockle
       - kubernetes-cli
       - doctl
+      - circleci
 
 #brewtap list
 BREWTAP_TARGETS:
@@ -51,7 +52,6 @@ CASK_TARGETS:
     - google-chrome
     - google-japanese-ime
     - bitbar
-    - karabiner
     - karabiner-elements
     - slack
     - chatwork
@@ -60,9 +60,7 @@ CASK_TARGETS:
     - virtualbox
     - skitch
     - alfred
-    - near-lock
     - 1password
-    - skype
     - messenger
     - cyberduck
     - atom

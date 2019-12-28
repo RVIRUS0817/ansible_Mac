@@ -15,6 +15,14 @@
   loop:
     - "{{ BREW_TARGETS }}"
 
+- name: Install pip
+  tags: homebrew
+  shell: sudo easy_install pip
+
+- name: upgrade pip
+  tags: homebrew
+  shell: sudo pip install --upgrade pip
+
 - name: Install pip packages
   pip: name={{ item }}
   tags: homebrew
