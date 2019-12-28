@@ -52,7 +52,6 @@ CASK_TARGETS:
     - google-chrome
     - google-japanese-ime
     - bitbar
-    - karabiner
     - karabiner-elements
     - slack
     - chatwork
@@ -63,7 +62,6 @@ CASK_TARGETS:
     - alfred
     - near-lock
     - 1password
-    - skype
     - messenger
     - cyberduck
     - atom
