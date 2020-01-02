@@ -140,7 +140,6 @@ alias repo='ghq look $(ghq list | peco)'
 export LC_ALL='ja_JP.UTF-8'
 export LANG=en_US.UTF-8
 
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-
+## DigitalOcean
 export DIGITALOCEAN_TOKEN=" "
+export KUBECONFIG="$KUBECONFIG:`ls ~/.kube/*.yaml | tr '\n' ':'`"
