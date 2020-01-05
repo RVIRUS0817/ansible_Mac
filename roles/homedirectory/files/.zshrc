@@ -135,7 +135,7 @@ zle -N peco-ssh
 bindkey '^J' peco-ssh
 
 ## ghq
-alias repo='ghq look $(ghq list | peco)'
+alias repo='cd $(ghq list --full-path --exact| peco)'
 
 export LC_ALL='ja_JP.UTF-8'
 export LANG=en_US.UTF-8
