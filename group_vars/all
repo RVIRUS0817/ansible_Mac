@@ -41,6 +41,7 @@ BREW_TARGETS:
       - kubernetes-cli
       - doctl
       - circleci
+      - goodwithtech/r/dockertags
 
 #brewtap list
 BREWTAP_TARGETS:
