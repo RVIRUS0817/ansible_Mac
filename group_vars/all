@@ -42,6 +42,7 @@ BREW_TARGETS:
       - doctl
       - circleci
       - goodwithtech/r/dockertags
+      - node
 
 #brewtap list
 BREWTAP_TARGETS:
