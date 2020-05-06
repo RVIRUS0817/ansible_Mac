@@ -68,6 +68,8 @@ export GOROOT=/usr/local/opt/go/libexec
 export GOPATH=$HOME
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
+#python
+export PATH="$HOME/.pyenv/shims:$PATH"
 
 # ブランチ名を色付きで表示させるメソッド
 function git-prompt {

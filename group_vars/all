@@ -6,6 +6,7 @@ PIP_TARGETS:
 BREW_TARGETS:
       - ansible
       - python
+      - pyenv
       - git
       - go
       - htop

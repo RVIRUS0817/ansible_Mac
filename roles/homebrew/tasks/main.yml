@@ -1,4 +1,4 @@
-- name: Update homebrew
+- name: Update homebrew 
   homebrew: update_homebrew=yes
 
 - name: Install homebrew tap packages
@@ -6,7 +6,7 @@
   tags: homebrew
   ignore_errors: yes
   loop:
-    - "{{ BREWTAP_TARGETS }}"
+    - "{{ BREWTAP_TARGETS }}" 
 
 - name: Install homebrew packages
   homebrew: name={{ item }}
@@ -15,11 +15,16 @@
   loop:
     - "{{ BREW_TARGETS }}"
 
-- name: Install pip
+- name: Install python 3.8.2  
+  tags: homebrew
+  ignore_errors: yes
+  shell: pyenv install 3.8.2 && pyenv global 3.8.2
+
+- name: Install pip 
   tags: homebrew
   shell: sudo easy_install pip
 
-- name: upgrade pip
+- name: upgrade pip 
   tags: homebrew
   shell: sudo pip install --upgrade pip
 
@@ -28,3 +33,4 @@
   tags: homebrew
   loop:
     - "{{ PIP_TARGETS }}"
+
