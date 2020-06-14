@@ -5,7 +5,7 @@ Homebrew、application install & homedirectory
 
 > please read my blog
 
-https://blog.adachin.me/wordpress/archives/5040
+https://blog.adachin.me/archives/5040
 
 # LT
 
@@ -13,13 +13,15 @@ https://speakerdeck.com/rvirus0817/macwoansiblede-gou-cheng-guan-li-sitiyatutaoh
 
 # My Environment
 
-・nvim/dein.vim  
-・zsh  
-・tmux/powerline  
-・peco/ghq (control + h(history),j(ssh)/repo   
 
-![2018-09-20 23 37 48](https://user-images.githubusercontent.com/5633085/45825886-38916c80-bd2e-11e8-83ff-7fd3bb51b12c.jpg)
+- iTerm2 color schema Japanesque
+- nvim/dein.vim
+- zsh
+- tmux/powerline
+- peco/ghq (control + h(history),j(ssh)/repo
 
+
+![ansible-mac](https://user-images.githubusercontent.com/5633085/84585276-149e8480-ae49-11ea-97b2-1dfafddc0fd5.jpg)
 
 # How to
 

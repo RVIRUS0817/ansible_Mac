@@ -21,3 +21,9 @@
 
 - name: install.sh dein.vim
   shell: sh ~/.config/nvim/installer.sh ~/.cache/dein
+
+- name: git_clone iterm2 color schema Japanesque
+  git:
+    repo: "https://github.com/aereal/dotfiles.git"
+     dest: "~/Desktop/dotfiles/"
+  ignore_errors: yes
