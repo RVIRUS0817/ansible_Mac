@@ -21,7 +21,8 @@ https://speakerdeck.com/rvirus0817/macwoansiblede-gou-cheng-guan-li-sitiyatutaoh
 - peco/ghq (control + h(history),j(ssh)/repo
 
 
-![ansible-mac](https://user-images.githubusercontent.com/5633085/84585276-149e8480-ae49-11ea-97b2-1dfafddc0fd5.jpg)
+![ansible_mac](https://user-images.githubusercontent.com/5633085/84591635-05382f00-ae7b-11ea-9ac4-47041903c1c7.jpg)
+
 
 # How to
 
