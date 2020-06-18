@@ -27,3 +27,14 @@
     repo: "https://github.com/aereal/dotfiles.git"
      dest: "~/Desktop/dotfiles/"
   ignore_errors: yes
+
+- name: git_clone iterm2 fonts
+  git:
+    repo: "https://github.com/powerline/fonts.git"
+    dest: "~/Desktop/fonts/"
+  ignore_errors: yes
+
+- name: install.sh fonts
+  shell: sh ~/Desktop/fonts/install.sh && rm -rf ~/Desktop/fonts
+  ignore_errors: yes
+
