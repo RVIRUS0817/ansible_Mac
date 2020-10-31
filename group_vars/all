@@ -58,7 +58,6 @@ CASK_TARGETS:
     - karabiner-elements
     - slack
     - chatwork
-    - evernote
     - iterm2
     - virtualbox
     - skitch
