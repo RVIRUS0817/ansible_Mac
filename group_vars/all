@@ -65,7 +65,6 @@ CASK_TARGETS:
     - 1password
     - messenger
     - cyberduck
-    - atom
     - macdown
     - thunderbird
     - clipy
