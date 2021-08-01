@@ -1,6 +1,5 @@
 export PATH="/usr/local/sbin:$PATH"
 
-fpath=(/usr/local/share/zsh-completions $fpath)
 autoload -Uz compinit
 compinit -u
 HISTFILE=~/.zsh_history
