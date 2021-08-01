@@ -30,7 +30,7 @@ setopt magic_equal_subst
 zstyle ':completion:*:default' menu select=2
 
 # プロンプトの表示設定(好きなようにカスタマイズ可)
-setopt PROMPT_SUBST ; PS1='%F{green}adachin@%f: %F{cyan}%~%f %F{red}$(__git_ps1 "(%s)")%f
+setopt PROMPT_SUBST ; PS1='%F{green}adachin@%f: %F{cyan}%~%f %F{yellow}$(__git_ps1 "(%s)")%f
 \$ '
 
 GIT_PS1_SHOWDIRTYSTATE=true
