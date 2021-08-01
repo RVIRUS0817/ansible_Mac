@@ -8,14 +8,18 @@ HISTSIZE=10000
 SAVEHIST=10000
 KEYTIMEOUT=1
 function history-all { history -E 1 }
+setopt +o nomatch 
 
+# git-promptの読み込み
+source ~/.zsh/git-prompt.sh
+
+# git-completionの読み込み
+fpath=(~/.zsh $fpath)
+zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.bash
+autoload -Uz compinit && compinit
 
 # プロンプト
 autoload -U colors; colors
-local p_current="[%{$fg[red]%}%~%{$reset_color%}]"$'\n'
-local p_info="%F{yellow}adachin@ > "
-PROMPT="$p_current$p_info"
-RPROMPT='%F{yellow}[%D]%f$(git-prompt)'
 setopt transient_rprompt
 setopt auto_param_slash
 setopt auto_menu
@@ -25,6 +29,17 @@ setopt always_last_prompt
 setopt magic_equal_subst
 zstyle ':completion:*:default' menu select=2
 
+# プロンプトの表示設定(好きなようにカスタマイズ可)
+setopt PROMPT_SUBST ; PS1='%F{green}adachin@%f: %F{cyan}%~%f %F{red}$(__git_ps1 "(%s)")%f
+\$ '
+
+GIT_PS1_SHOWDIRTYSTATE=true
+GIT_PS1_SHOWUNTRACKEDFILES=true
+GIT_PS1_SHOWSTASHSTATE=true
+GIT_PS1_SHOWUPSTREAM=auto
+
+# プロンプトが表示されるたびにプロンプト文字列を評価、置換する
+setopt prompt_subst
 
 # エイリアスいろいろ
 export LSCOLORS=gxfxcxdxbxegedabagacad
@@ -71,43 +86,6 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 #python
 export PATH="$HOME/.pyenv/shims:$PATH"
 
-# ブランチ名を色付きで表示させるメソッド
-function git-prompt {
-  local branch_name st branch_status
-
-  if [ ! -e  ".git" ]; then
-    # gitで管理されていないディレクトリは何も返さない
-    return
-  fi
-  branch_name=`git rev-parse --abbrev-ref HEAD 2> /dev/null`
-  st=`git status 2> /dev/null`
-  if [[ -n `echo "$st" | grep "^nothing to"` ]]; then
-    # 全てcommitされてクリーンな状態
-    branch_status="%F{green}"
-  elif [[ -n `echo "$st" | grep "^Untracked files"` ]]; then
-    # gitに管理されていないファイルがある状態
-    branch_status="%F{red}?"
-  elif [[ -n `echo "$st" | grep "^Changes not staged for commit"` ]]; then
-    # git addされていないファイルがある状態
-    branch_status="%F{red}+"
-  elif [[ -n `echo "$st" | grep "^Changes to be committed"` ]]; then
-    # git commitされていないファイルがある状態
-    branch_status="%F{yellow}!"
-  elif [[ -n `echo "$st" | grep "^rebase in progress"` ]]; then
-    # コンフリクトが起こった状態
-    echo "%F{red}!(no branch)"
-    return
-  else
-    # 上記以外の状態の場合は青色で表示させる
-    branch_status="%F{blue}"
-  fi
-  # ブランチ名を色付きで表示する
-  echo "${branch_status}[$branch_name]"
-}
-
-# プロンプトが表示されるたびにプロンプト文字列を評価、置換する
-setopt prompt_subst
-
 ### history
 function peco-history-selection() {
     BUFFER=`history 1 | tail -r | awk '{$1="";print $0}' | egrep -v "ls" | uniq -u | sed 's/^ //g' | peco`
@@ -144,6 +122,10 @@ alias repo='cd $(ghq list --full-path --exact| peco)'
 export LC_ALL='ja_JP.UTF-8'
 export LANG=en_US.UTF-8
 
-## DigitalOcean
-export DIGITALOCEAN_TOKEN=" "
-export KUBECONFIG="$KUBECONFIG:`ls ~/.kube/*.yaml | tr '\n' ':'`"
+## node
+export PATH=$HOME/.nodebrew/current/bin:$PATH
+
+## PHP 
+export PATH="/usr/local/opt/php@7.4/bin:$PATH"    
+export PATH="/usr/local/opt/php@7.4/sbin:$PATH"    
+
