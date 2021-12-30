@@ -28,7 +28,6 @@ BREW_TARGETS:
       - tree
       - watch
       - w3m
-      - neovim
       - iproute2mac
       - watch
       - jq

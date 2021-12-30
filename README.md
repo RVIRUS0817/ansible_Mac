@@ -15,7 +15,6 @@ https://speakerdeck.com/rvirus0817/macwoansiblede-gou-cheng-guan-li-sitiyatutaoh
 
 
 - iTerm2 color schema Japanesque
-- nvim/dein.vim
 - zsh
 - tmux/powerline
 - peco/ghq (control + h(history),j(ssh)/repo
