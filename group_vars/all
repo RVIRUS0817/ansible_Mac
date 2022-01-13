@@ -53,7 +53,6 @@ CASK_TARGETS:
     - google-chrome
     - google-japanese-ime
     - bitbar
-    - karabiner-elements
     - slack
     - chatwork
     - iterm2
@@ -67,7 +66,6 @@ CASK_TARGETS:
     - thunderbird
     - clipy
     - macvim
-    - jasper
     - visual-studio-code
     - kitematic
 
@@ -82,4 +80,3 @@ HOMEDIR_TARGETS:
   - { src: roles/homedirectory/files/.zshrc, dest: ~/ }
   - { src: roles/homedirectory/files/.gvimrc, dest: ~/ }
   - { src: roles/homedirectory/files/.vim, dest: ~/ }
-  - { src: roles/homedirectory/files/.terraformrc, dest: ~/ }
