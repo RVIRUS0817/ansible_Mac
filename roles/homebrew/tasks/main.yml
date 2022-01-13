@@ -15,6 +15,7 @@
   loop:
     - "{{ BREW_TARGETS }}"
 
+#manual
 - name: Install python 3.10.0
   tags: homebrew
   ignore_errors: yes
@@ -23,7 +24,7 @@
 - name: Install pip
   tags: homebrew
   ignore_errors: yes
-  shell: easy_install pip
+  shell: sudo easy_install pip
 
 - name: upgrade pip, install powerline-status
   tags: homebrew
