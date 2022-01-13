@@ -9,7 +9,7 @@
 - name: git_clone iterm2 color schema Japanesque
   git:
     repo: "https://github.com/aereal/dotfiles.git"
-     dest: "~/Desktop/dotfiles/"
+    dest: "~/Desktop/dotfiles/"
   ignore_errors: yes
 
 - name: git_clone iterm2 fonts
@@ -24,4 +24,4 @@
 
 - name: install git-prompt
   shell: mkdir ~/.zsh && cd ~/.zsh && curl -o git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh && curl -o git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash && curl -o _git https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh
-    ignore_errors: yes
+  ignore_errors: yes
