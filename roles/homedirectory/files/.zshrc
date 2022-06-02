@@ -117,6 +117,7 @@ alias dp='docker exec -it $(docker ps |peco|awk "{print \$1}") bash'
 alias ds='docker stop $(docker ps | peco | awk "{print \$1}")'
 alias dr='docker rmi -f $(docker images | peco | awk "{print \$3}")'
 alias das='docker stop $(docker ps -q)'
+alias ke='kubectl exec -it $(kubectl get pods |peco|awk "{print \$1}") -- bash'
 alias repo='cd $(ghq list --full-path --exact| peco)'
 
 export LC_ALL='ja_JP.UTF-8'
