@@ -82,9 +82,6 @@ export GOROOT=/usr/local/opt/go/libexec
 export GOPATH=$HOME
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
 
-#python
-export PATH="$HOME/.pyenv/shims:$PATH"
-
 ### history
 function peco-history-selection() {
     BUFFER=`history 1 | tail -r | awk '{$1="";print $0}' | egrep -v "ls" | uniq -u | sed 's/^ //g' | peco`
@@ -116,10 +113,17 @@ zle -N peco-ssh
 bindkey '^J' peco-ssh
 
 ## ghq
+## ghq-peco
+alias docker-exec='docker exec -it $(docker ps |peco|awk "{print \$1}") bash'
+alias docker-stop='docker stop $(docker ps | peco | awk "{print \$1}")'
+alias docker-all-stop='docker stop $(docker ps -q)'
 alias repo='cd $(ghq list --full-path --exact| peco)'
 
 export LC_ALL='ja_JP.UTF-8'
 export LANG=en_US.UTF-8
+
+#python
+export PATH="$HOME/.pyenv/shims:$PATH"
 
 ## node
 export PATH=$HOME/.nodebrew/current/bin:$PATH
