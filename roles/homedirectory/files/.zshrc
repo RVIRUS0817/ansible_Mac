@@ -112,11 +112,11 @@ function peco-ssh () {
 zle -N peco-ssh
 bindkey '^J' peco-ssh
 
-## ghq
 ## ghq-peco
-alias docker-exec='docker exec -it $(docker ps |peco|awk "{print \$1}") bash'
-alias docker-stop='docker stop $(docker ps | peco | awk "{print \$1}")'
-alias docker-all-stop='docker stop $(docker ps -q)'
+alias dp='docker exec -it $(docker ps |peco|awk "{print \$1}") bash'
+alias ds='docker stop $(docker ps | peco | awk "{print \$1}")'
+alias dr='docker rmi -f $(docker images | peco | awk "{print \$3}")'
+alias das='docker stop $(docker ps -q)'
 alias repo='cd $(ghq list --full-path --exact| peco)'
 
 export LC_ALL='ja_JP.UTF-8'
