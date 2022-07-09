@@ -16,7 +16,7 @@
     pu = push
 
 [ghq]
-  root = ~/git/RVIRUS0817
+  root = ~/git
 
 [commit]
   template = ~/.commit_template
