@@ -115,13 +115,16 @@ bindkey '^J' peco-ssh
 ## ghq-peco
 alias dp='docker exec -it $(docker ps |peco|awk "{print \$1}") bash'
 alias ds='docker stop $(docker ps | peco | awk "{print \$1}")'
+alias di='docker images'
 alias dr='docker rmi -f $(docker images | peco | awk "{print \$3}")'
-alias das='docker stop $(docker ps -q)'
 alias ke='kubectl exec -it $(kubectl get pods |peco|awk "{print \$1}") -- bash'
 alias repo='cd $(ghq list --full-path --exact| peco)'
 
 export LC_ALL='ja_JP.UTF-8'
 export LANG=en_US.UTF-8
+
+## DigitalOcean
+export KUBECONFIG="$KUBECONFIG:`ls ~/.kube/*.yaml | tr '\n' ':'`"
 
 #python
 export PATH="$HOME/.pyenv/shims:$PATH"
@@ -132,4 +135,3 @@ export PATH=$HOME/.nodebrew/current/bin:$PATH
 ## PHP 
 export PATH="/usr/local/opt/php@7.4/bin:$PATH"    
 export PATH="/usr/local/opt/php@7.4/sbin:$PATH"    
-
