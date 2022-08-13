@@ -27,7 +27,10 @@ https://speakerdeck.com/rvirus0817/macwoansiblede-gou-cheng-guan-li-sitiyatutaoh
 
 ## 1.fork run first.sh  
 ````
-Fork!!!!
+- Fork!!!!
+
+- install xcode
+
 $ ./scripts/first.sh
 ````
 
