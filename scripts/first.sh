@@ -1,7 +1,6 @@
 #!/bin/bash
 
 ## install xcode
-sudo xcodebuild -license
 sudo xcode-select --install
 
 ## install homebrew
