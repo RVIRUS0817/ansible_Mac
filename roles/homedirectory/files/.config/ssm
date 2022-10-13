@@ -1,0 +1,4 @@
+INSID=$(aws ec2 describe-instances --output=text \
+  --query 'Reservations[].Instances[].{id:InstanceId,ip:PrivateIpAddress,name:Tags[?Key==`Name`].Value|[0]}' \
+  | peco | cut -f -1)
+aws ssm start-session --target $INSID

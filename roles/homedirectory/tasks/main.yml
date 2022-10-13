@@ -25,3 +25,8 @@
 - name: install git-prompt
   shell: mkdir ~/.zsh && cd ~/.zsh && curl -o git-prompt.sh https://raw.githubusercontent.com/git/git/master/contrib/completion/git-prompt.sh && curl -o git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash && curl -o _git https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.zsh
   ignore_errors: yes
+
+- name: install ssm plugin
+  shell: curl "https://s3.amazonaws.com/session-manager-downloads/plugin/latest/mac/session-manager-plugin.pkg" -o "session-manager-plugin.pkg" && sudo installer -pkg session-manager-plugin.pkg -target / && sudo ln -s /usr/local/sessionmanagerplugin/bin/session-manager-plugin /usr/local/bin/session-manager-plugin
+  ignore_errors: yes
+
