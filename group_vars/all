@@ -58,14 +58,13 @@ CASK_TARGETS:
     - iterm2
     - virtualbox
     - skitch
-    - alfred
     - 1password
     - messenger
     - cyberduck
     - macdown
     - thunderbird
-    - clipy
     - macvim
+    - raycast
     - visual-studio-code
     - kitematic
 
