@@ -119,7 +119,7 @@ alias di='docker images'
 alias dr='docker rmi -f $(docker images | peco | awk "{print \$3}")'
 alias ke='kubectl exec -it $(kubectl get pods |peco|awk "{print \$1}") -- bash'
 alias repo='cd $(ghq list --full-path --exact| peco)'
-alias repo='~/.config/ssm'
+alias ssm='~/.config/ssm'
 
 export LC_ALL='ja_JP.UTF-8'
 export LANG=en_US.UTF-8
