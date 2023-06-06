@@ -49,7 +49,6 @@ BREWTAP_TARGETS:
 
 #homebrew-cask list
 CASK_TARGETS:
-    - firefox
     - google-chrome
     - google-japanese-ime
     - bitbar
@@ -66,7 +65,6 @@ CASK_TARGETS:
     - macvim
     - raycast
     - visual-studio-code
-    - kitematic
 
 #homedirectory list
 HOMEDIR_TARGETS:
