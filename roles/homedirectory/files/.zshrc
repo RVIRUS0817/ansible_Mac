@@ -126,6 +126,7 @@ export LANG=en_US.UTF-8
 
 ## DigitalOcean
 export KUBECONFIG="$KUBECONFIG:`ls ~/.kube/*.yaml | tr '\n' ':'`"
+[[ /opt/homebrew/bin/kubectl ]] && source <(kubectl completion zsh)
 
 #python
 export PATH="$HOME/.pyenv/shims:$PATH"
